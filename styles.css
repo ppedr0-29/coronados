@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f5f5f5;
   font-family: Arial, sans-serif;
@@ -7,183 +15,285 @@ body {
   margin-left: 15px;
 }
 
-/*Estilos register y login*/
-.content {
-  margin: 50px auto;
-  max-width: 500px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-}
-
-input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-input[type="submit"]:hover {
-  background-color: #666;
-}
-
-p {
-  text-align: center;
-  font-size: 16px;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 /*Estilos encabezados*/
 h1 {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 /*Estilos header y nav*/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 nav {
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 30px;
+  font-size: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin: 10px;
 }
 
-nav div {
-  flex: 1;
-}
-
-nav img {
-  height: 50px;
-  width: auto;
-  margin-left: 20px;
-  margin-top: 10px;
-}
 
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
 
 nav li {
-  margin-left: 20px;
+  margin: 0 10px;
 }
 
 nav a {
-  font-size: 18px;
   text-decoration: none;
   color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-nav {
-  position: relative;
+.logo-inicio img {
+  height: 40px;
+  border-radius: 50%;
 }
 
 .carrito {
-  position: absolute;
-  top: 0;
-  right: 0;
-  float: right;
-  clear: both;
-  margin: 0;
-  width: 15px;
+  margin-left: auto;
 }
+
+.carrito img {
+  height: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li:hover {
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+.carrito:hover img {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
 
 /*Estilos main*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: bold;
+.information {
+  text-align: center;
+  margin: 25px;
+}
+
+.information h2 {
+  margin-bottom: 15px;
+}
+
+.information h4 {
+  margin-top: 10px;
+}
+
+
+.container {
+  margin-top: 35px;
   margin-bottom: 10px;
+  font-size: 10px;
 }
 
-.diseños,
-.productos {
+.boxContainer {
   display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
 }
 
-.diseños img,
-.productos img {
-  width: calc(33.33% - 10px);
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.front-design {
+  width: 275px;
+  height: 275px;
+  margin-bottom: 2%;
+  display: grid;
+  grid-template-rows: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-.diseños img:hover,
-.productos img:hover {
-  transform: scale(1.05);
+.front-design img, .front-design figcaption {
+  grid-area: stack;
 }
 
-@media (max-width: 768px) {
-  .diseños img,
-  .productos img {
-    width: 100%;
-  }
+.front-design img {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+.front-design figcaption {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(calc(100% - 3rem));
+  transition: transform 0.6s;
+  color: #fff;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.front-design figcaption h3 {
+  height: 3rem;
+  font-size: 25px;
+}
+
+.front-design:hover figcaption {
+  transform: none;
+}
+
 
 /*Estilos footer*/
 
+footer {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  padding: 20px 0;
+}
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 10px;
+}
+
+.left {
+  width: 50%;
+}
+
+.left p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right img {
+  width: 25px;
+  margin-left: 20px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.right img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
+/*Estilos register y login*/
+.form-group {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.form-group h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.form-group h1:hover {
+  color: #666;
+}
+
+.form-group label {
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.form-group button[type="submit"] {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group button[type="submit"]:hover {
+  background-color: #666;
+}
+
+.login-group {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login-group p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-group a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-group a:hover {
+  text-decoration: underline;
+  color: #666;
+}
