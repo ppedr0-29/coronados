@@ -23,8 +23,6 @@
         <li><a href="/html/micuenta.html">Mi cuenta</a></li>
         <li><a href="/html/cursos.html">Cursos</a></li>
         <li><a href="/html/turnos.html">Turnos</a></li>
-        <li><a href="#diseños">Diseños</a></li>
-        <li><a href="#productos">Productos</a></li>
       </ul>
       <div class="carrito">
         <a href="/html/carrito.html"><img src="/logos/carrito-de-compras.png" alt="carrito"></a>
@@ -32,39 +30,50 @@
     </nav>
   </header>
 
-    <main>
-    <h1>Sistema de turnos</h1>
-
-    <h2>Calendario de disponibilidad</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Hora 1</th>
-          <th>Hora 2</th>
-          <th>Hora 3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes</td>
-          <td class="vacante">9:00 - 10:00</td>
-          <td class="ocupado">10:00 - 11:00</td>
-          <td class="vacante">11:00 - 12:00</td>
-        </tr>
-        <tr>
-          <td>Martes</td>
-          <td class="vacante">14:00 - 15:00</td>
-          <td class="vacante">15:00 - 16:00</td>
-          <td class="ocupado">16:00 - 17:00</td>
-        </tr>
-        <!-- Aquí se pueden agregar más filas para más días y horas -->
-      </tbody>
-    </table>
-</main>
-    <!-- Aquí se pueden agregar más elementos HTML para que el usuario pueda sacar turnos, como un formulario o un botón -->
-  </body>
-</html>
+  <div class="turnos">
+      <h2>Turnos</h2>
+    <form>
+      <div class="form-group2">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      
+      <div class="form-group2">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      
+      <div class="form-group2">
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+      
+      <div class="form-group2">
+        <label for="fecha">Fecha de turno:</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
+      
+      <div class="form-group2">
+        <label for="hora">Hora de turno:</label>
+        <select id="hora" name="hora" required>
+          <option value="">Seleccione una hora</option>
+          <option value="09:00">09:00 AM</option>
+          <option value="10:00">10:00 AM</option>
+          <option value="11:00">11:00 AM</option>
+          <option value="12:00">12:00 PM</option>
+          <option value="13:00">01:00 PM</option>
+          <option value="14:00">02:00 PM</option>
+          <option value="15:00">03:00 PM</option>
+          <option value="16:00">04:00 PM</option>
+        </select>
+      </div>
+      
+      <div class="form-group2">
+        <button type="submit" class="btn">Reservar turno</button>
+      </div>
+    </form>
+  </div>
+  
 
 </body>
 </html>
