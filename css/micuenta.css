@@ -18,7 +18,8 @@
 
 body{
   min-height: 100vh;
-  background: var(--bg-color);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/logos/desktop-wallpaper-stock-of-barber-barber-shop-barbershop.jpg);
+  background-size: contain;
   color: var(--text-color);
 }
 
@@ -45,7 +46,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: transparent;
+  background-color: var(--bg-color);
   padding: 28px 12%;
   transition: all .50s ease ;
 }
@@ -183,7 +184,6 @@ main {
   padding: 20px;
   font-family: 'Roboto Condensed', sans-serif;
 }
-
 /*Register y login*/
 
 .form-group {
@@ -196,7 +196,7 @@ main {
   margin-top: 100px;
 }
 
-.form-group h1 {
+.form-group h2 {
   color: #333;
   font-size: 36px;
   margin-bottom: 20px;
@@ -205,7 +205,7 @@ main {
   text-align: left;
 }
 
-.form-group h1:hover {
+.form-group h2:hover {
   color: #666;
 }
 

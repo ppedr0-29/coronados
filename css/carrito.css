@@ -18,7 +18,9 @@
 
 body{
   min-height: 100vh;
-  background: var(--bg-color);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/logos/desktop-wallpaper-stock-of-barber-barber-shop-barbershop.jpg);
+  background-size: contain;
+  color: var(--text-color);
 }
 
 /*Estilos encabezados*/
@@ -44,7 +46,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: transparent;
+  background-color: var(--bg-color);
   padding: 28px 12%;
   transition: all .50s ease ;
 }
@@ -185,45 +187,74 @@ main {
 
 
 .compra {
-	width: 50%;
-	margin: 50px auto;
-  margin-top: 80px;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+  margin-top: 100px;
 }
 
-.compra h1 {
-	text-align: center;
-	margin-bottom: 20px;
+.compra h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.compra h2:hover {
+  color: #666;
 }
 
 .compra form label {
-	display: block;
-	margin-bottom: 10px;
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .compra form input[type="text"],
 .compra form input[type="email"],
 .compra form input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+  }
+
+.compra form input[type="text"]:focus,
+.compra form input[type="email"]:focus,
+.compra form input[type="tel"]:focus {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.compra form input[type="submit"] {
+  background-color: #333;
   border: none;
   border-radius: 5px;
-  color: #333; /* Cambia el valor a tu color deseado */
-}
-.compra form input[type="submit"] {
-	background-color: #4CAF50;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .compra form input[type="submit"]:hover {
-	background-color: #3e8e41;
+  background-color: #666;
 }
+
+
+
+
+

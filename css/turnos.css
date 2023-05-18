@@ -18,7 +18,8 @@
 
 body{
   min-height: 100vh;
-  background: var(--bg-color);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/logos/desktop-wallpaper-stock-of-barber-barber-shop-barbershop.jpg);
+  background-size: contain;
   color: var(--text-color);
 }
 
@@ -45,7 +46,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: transparent;
+  background-color: var(--bg-color);
   padding: 28px 12%;
   transition: all .50s ease ;
 }
@@ -184,25 +185,29 @@ main {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.title {
-  display: flex;
-  text-align: center;
-  margin-top: 10%;
-  margin-left: 45%;
+.turnos {
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+  margin-top: 70px;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 30px;
 }
 
-.turnos {
-  width: 75%;
-  height: 75%;
-  margin: 0 auto;
-  padding: 15px;
-  background-color: #f7f7f7;
-  margin-top: 2%;
-  margin-bottom: 20%;
+.turnos h2 {
   color: #333;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.turnos h2:hover {
+  color: #666;
 }
 
 .form-group2 {
@@ -210,19 +215,31 @@ main {
 }
 
 .form-group2 label {
+  color: #666;
   display: block;
   margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .form-group2 input[type="text"],
 .form-group2 input[type="email"],
 .form-group2 input[type="tel"],
 .form-group2 select {
-  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+}
+
+.form-group2 input[type="text"]:focus,
+.form-group2 input[type="email"]:focus,
+.form-group2 input[type="password"]:focus {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 .form-group2 input[type="date"] {
@@ -234,17 +251,19 @@ main {
 }
 
 .form-group2 button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
+  background-color: #333;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
-  float: right;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .form-group2 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #666;
 }
 
 @media screen and (max-width: 600px) {

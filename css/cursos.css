@@ -18,7 +18,8 @@
 
 body{
   min-height: 100vh;
-  background: var(--bg-color);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/logos/desktop-wallpaper-stock-of-barber-barber-shop-barbershop.jpg);
+  background-size: contain;
   color: var(--text-color);
 }
 
@@ -30,7 +31,6 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 50px;
   margin-top: 7%;
-  
 }
 
 /*Estilos header y nav*/
@@ -45,7 +45,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: transparent;
+  background-color: var(--bg-color);
   padding: 28px 12%;
   transition: all .50s ease ;
 }
@@ -235,7 +235,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 10px rgb(255, 255, 255);
 	transition: box-shadow 0.2s ease-in-out;
 }
 
