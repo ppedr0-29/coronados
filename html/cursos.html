@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Coronados BarberShop es una barberia ubicada en el barrio de Lomas del Mirador, especializada en platinados y cortes de cabello masculino. Nos encargamos de personalizar tu imagen y satisfacer tus pedidos">
-  <meta name="keywords" content="Barberia, BarberShop, Platinado, Corte de pelo, Maquinas, Tijeras, Tintuna, Peine, Degrade, Teñidos, Teñir, Mataderos,Peluqueria, Turnos,">
+  <meta name="description"
+    content="Coronados BarberShop es una barbería ubicada en el barrio de Lomas del Mirador, especializada en platinados y cortes de cabello masculino. Nos encargamos de personalizar tu imagen y satisfacer tus pedidos">
+  <meta name="keywords"
+    content="Barbería, BarberShop, Platinado, Corte de pelo, Maquinas, Tijeras, Tintura, Peine, Degrade, Teñidos, Teñir, Mataderos, Peluquería, Turnos,">
   <meta name="author" content="Pedro Loraschi">
   <meta name="copyright" content="Coronados BarberShop Inc.">
   <link rel="icon" href="/logos/images.jpg">
-  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" type="text/css" href="/estilos/cursos.css">
   <title>Coronados BarberShop</title>
 </head>
+
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo-inicio">
-        <a href="/html/index.html"><img src="/logos/Captura de pantalla (21).png" alt="logo1"></a>
-      </div>
-      <ul>
-        <li><a href="/html/micuenta.html">Mi cuenta</a></li>
-        <li><a href="/html/cursos.html">Cursos</a></li>
-        <li><a href="/html/turnos.html">Turnos</a></li>
-      </ul>
-      <div class="carrito">
-        <a href="/html/carrito.html"><img src="/logos/carrito-de-compras.png" alt="carrito"></a>
-      </div>
-    </nav>
+    <a href="../html/index.html" class="icono-inicio"><img src="../logos/barber-pole.png"
+        alt="icono-inicio"><span>Coronados</span></a>
+    <ul class="navbar">
+      <li>
+        <a href="../html/contacto.html" class="active">Contacto</a>
+      </li>
+      <li>
+        <a href="../html/cursos.html">Cursos</a>
+      </li>
+      <li>
+        <a href="../html/turnos.html">Turnos</a>
+      </li>
+
+    </ul>
+    <div class="boxNav">
+      <a href="../html/carrito.html" class="carrito"><i class="ri-shopping-cart-line"></i></a>
+      <a href="../html/micuenta.html" class="user"><i class="ri-user-3-line"></i></a>
+      <div class="bx bx-menu" id="icono-menu"></div>
+    </div>
   </header>
 
-  <section class="intro">
-    <h2>Descubre nuestros cursos presenciales</h2>
-    <p>Aprende nuevas habilidades y mejora tu carrera con nuestros cursos profesionales.</p>
-  </section>
-
-  <section class="cursos">
-    <h2>Cursos destacados</h2>
-    <ul>
-      <li>
-        <img src="/diseños/curso/1248214968.jpg" alt="Curso 1">
-        <h3>CURSO │ Básico</h3>
-        <p>Aprenderas lo basico y escencial para iniciar tu incursion en el mundo de la barberia. Centrado al manejo de maquina y tijera.</p>
-        <a href="carrito.html" class="boton">Comprar</a>
-      </li>
-      <li>
-        <img src="/diseños/curso/-2040215101.jpg" alt="Curso 2">
-        <h3>CURSO │ Perfeccionamiento</h3>
-        <p>En este curso mejoraras tu tecnica y aprenderas habilidades nuevas, como diferentes tipos de degrade.</p>
-        <a href="carrito.html" class="boton">Comprar</a>
-      </li>
-      <li>
-        <img src="/diseños/curso/81793153.jpg" alt="Curso 3">
-        <h3>CURSO │ Colorimetría</h3>
-        <p>Curso centralizado a la inicialización de la colorimetría, para despues pasar con los colores especiales y tecnicas avanzadas.</p>
-        <a href="carrito.html" class="boton">Comprar</a>
-      </li>
-    </ul>
-  </section>
+  <main>
+    <section class="intro">
+      <h2>Descubre nuestros cursos presenciales</h2>
+      <p>Aprende nuevas habilidades y mejora tu carrera con nuestros cursos profesionales.</p>
+    </section>
+    <section class="cursos">
+      <div class="container">
+        <h2>Cursos destacados</h2>
+        <ul>
+          <li>
+            <img src="/diseños/curso/1248214968.jpg" alt="Curso 1">
+            <h3>CURSO │ Básico</h3>
+            <p>Aprenderas lo basico y escencial para iniciar tu incursion en el mundo de la barberia. Centrado al manejo
+              de maquina y tijera.</p>
+            <a href="carrito.html" class="boton">Comprar</a>
+          </li>
+          <li>
+            <img src="/diseños/curso/-2040215101.jpg" alt="Curso 2">
+            <h3>CURSO │ Perfeccionamiento</h3>
+            <p>En este curso mejoraras tu tecnica y aprenderas habilidades nuevas, como diferentes tipos de degrade.</p>
+            <a href="carrito.html" class="boton">Comprar</a>
+          </li>
+          <li>
+            <img src="/diseños/curso/81793153.jpg" alt="Curso 3">
+            <h3>CURSO │ Colorimetría</h3>
+            <p>Curso centralizado a la inicialización de la colorimetría, para despues pasar con los colores especiales
+              y tecnicas avanzadas.</p>
+            <a href="carrito.html" class="boton">Comprar</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
+  <script src="/main.js"></script>
 </body>
 </html>
-
-
-

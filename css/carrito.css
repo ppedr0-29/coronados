@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #222327;
+  --text-color: #fff;
+  --hover-color: #ED4C67;
+}
+
+body{
+  min-height: 100vh;
+  background: var(--bg-color);
+}
+
+/*Estilos encabezados*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 7%;
+  
+}
+
+/*Estilos header y nav*/
+
+header {
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all .50s ease ;
+}
+
+.icono-inicio {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.icono-inicio img {
+  color: var(--hover-color);
+  width: 50px;
+  height: 50px;
+  margin-right: 3px;
+}
+
+.icono-inicio span {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  margin-left: 200px;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+
+.navbar a:hover {
+  color: var(--hover-color);
+}
+
+
+.boxNav {
+  display: flex;
+  margin-left: 20%;
+}
+
+.boxNav a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: all .50s ease;
+}
+
+.carrito {
+  display: flex;
+  align-items: center;
+}
+
+.carrito i {
+  color: var(--hover-color);
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.user i {
+  color: var(--hover-color);
+  font-size: 28px;
+  margin-left: 7px;
+}
+
+.boxNav a:hover {
+  color: var(--hover-color);
+}
+
+#icono-menu {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: flex;
+}
+
+@media (max-width: 1280px){
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1024px){
+    #icono-menu {
+        display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background-color: #3d3d3d;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+    .navbar a {
+      display: block;
+      margin: 12px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover {
+      color: var(--hover-color);
+      transform: translateY(5px);
+    }
+    .navbar a.active {
+      color: var(--text-color);
+    }
+    .navbar.open {
+      right: 2%;
+    }
+}
+
+
+
+main {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.compra {
+	width: 50%;
+	margin: 50px auto;
+  margin-top: 80px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.compra h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.compra form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.compra form input[type="text"],
+.compra form input[type="email"],
+.compra form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #333; /* Cambia el valor a tu color deseado */
+}
+.compra form input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.compra form input[type="submit"]:hover {
+	background-color: #3e8e41;
+}

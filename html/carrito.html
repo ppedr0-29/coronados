@@ -6,35 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Coronados BarberShop es una barberia ubicada en el barrio de Lomas del Mirador, especializada en platinados y cortes de cabello masculino. Nos encargamos de personalizar tu imagen y satisfacer tus pedidos">
+    content="Coronados BarberShop es una barbería ubicada en el barrio de Lomas del Mirador, especializada en platinados y cortes de cabello masculino. Nos encargamos de personalizar tu imagen y satisfacer tus pedidos">
   <meta name="keywords"
-    content="Barberia, BarberShop, Platinado, Corte de pelo, Maquinas, Tijeras, Tintuna, Peine, Degrade, Teñidos, Teñir, Mataderos,Peluqueria, Turnos,">
+    content="Barbería, BarberShop, Platinado, Corte de pelo, Maquinas, Tijeras, Tintura, Peine, Degrade, Teñidos, Teñir, Mataderos, Peluquería, Turnos,">
   <meta name="author" content="Pedro Loraschi">
   <meta name="copyright" content="Coronados BarberShop Inc.">
   <link rel="icon" href="/logos/images.jpg">
-  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" type="text/css" href="/estilos/carrito.css">
   <title>Coronados BarberShop</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo-inicio">
-        <a href="/html/index.html"><img src="/logos/Captura de pantalla (21).png" alt="logo1"></a>
-      </div>
-      <ul>
-        <li><a href="/html/micuenta.html">Mi cuenta</a></li>
-        <li><a href="/html/cursos.html">Cursos</a></li>
-        <li><a href="/html/turnos.html">Turnos</a></li>
-      </ul>
-      <div class="carrito">
-        <a href="/html/carrito.html"><img src="/logos/carrito-de-compras.png" alt="carrito"></a>
-      </div>
-    </nav>
-  </header>
+      <header>
+        <a  href="../html/index.html" class="icono-inicio"><img src="../logos/barber-pole.png" alt="icono-inicio"><span>Coronados</span></a>
+          <ul class="navbar">
+              <li>
+                <a href="../html/contacto.html" class="active">Contacto</a>
+              </li>
+              <li>
+                <a href="../html/cursos.html">Cursos</a>
+              </li>
+              <li>
+                <a href="../html/turnos.html">Turnos</a>
+              </li>
+                
+          </ul>
+          <div class="boxNav">
+              <a href="../html/carrito.html" class="carrito"><i class="ri-shopping-cart-line"></i></a>
+              <a href="../html/micuenta.html" class="user"><i class="ri-user-3-line"></i></a>
+              <div class="bx bx-menu" id="icono-menu"></div>
+          </div>
+      </header>
 <main>
-  <h1>error.</h1>
+  <div class="compra">
+		<h1>Solicitud de Compra</h1>
+		<form>
+			<label for="nombre">Nombre y Apellido:</label>
+			<input type="text" id="nombre" name="nombre" required>
+
+			<label for="email">Correo Electrónico:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="telefono">Teléfono:</label>
+			<input type="tel" id="telefono" name="telefono" required>
+
+			<label for="articulo">Artículo a Comprar:</label>
+			<input type="text" id="articulo" name="articulo" required>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
 </main>
 </body>
-
 </html>
